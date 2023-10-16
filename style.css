@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Comic+Neue:ital,wght@0,400;1,300&family=PT+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+
+body {
+    background-color: burlywood;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav {
+    background-color: brown;
+    color: bisque;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-family: 'AR One Sans', sans-serif;
+
+
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+.gamecontainer {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'AR One Sans', sans-serif;
+    position: relative;
+
+
+}
+
+.box {
+    border: 2px solid brown;
+    font-size: 9vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: lightsalmon;
+}
+
+.gameinfo {
+    padding: 0 34px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 22px;
+}
+
+.gameinfo h1 {
+    font-size: 2.5rem;
+}
+
+.info {
+    font-size: 36px;
+}
+
+.imgbox img {
+    width: 0;
+    transition: ease-in-out;
+    transition-duration: 1s;
+    margin: 0 100;
+    padding: 0 10;
+
+
+
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+#reset {
+    margin: 0 20px;
+    padding: 0 10px;
+    background-color: brown;
+    color: burlywood;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 27px;
+    font-weight: bolder;
+}
+
+.line {
+    background-color: black;
+    height: 4px;
+    width: 0;
+    position: absolute;
+    background-color: #131313;
+
+    transition: width 1s ease-in-out;
+
+}
+
+/*CSS Rules to be applied*/
+@media screen and (max-width:950px) {
+    .gamecontainer {
+        flex-wrap: wrap;
+    }
+
+    .gameinfo {
+        margin-top: 34px;
+        font-size: 1.5rem;
+    }
+
+    .gameinfo h1 {
+        display: flex;
+        font-size: 1.5rem;
+
+    }
+
+
+
+    .container {
+        grid-template-rows: (3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
