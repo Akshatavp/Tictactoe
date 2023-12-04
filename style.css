@@ -84,6 +84,7 @@ nav ul {
     transition-duration: 1s;
     margin: 0 100;
     padding: 0 10;
+    border-radius: 50%;
 
 
 
@@ -145,6 +146,9 @@ nav ul {
 
     }
 
+    .line {
+        display: none;
+    }
 
 
     .container {
